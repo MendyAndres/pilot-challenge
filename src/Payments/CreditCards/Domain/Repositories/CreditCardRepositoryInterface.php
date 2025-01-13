@@ -8,7 +8,7 @@ use App\Payments\CreditCards\Domain\Entities\CreditCardsEntity;
 interface CreditCardRepositoryInterface
 {
     public function save(CreditCardsEntity $creditCard): void;
-    public function find(string $creditCardNumber): CreditCardsEntity;
+    public function find(string $creditCardNumber): ?CreditCardsEntity;
 
 
 }
